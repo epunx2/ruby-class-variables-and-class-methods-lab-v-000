@@ -29,4 +29,14 @@ class Song
     new_array
   end
 
+  def self.genres
+    new_array = []
+    @@genres.each do |genre|
+      if new_array.include?(genre) == false
+        new_array << genre
+      end
+    end
+    new_array
+  end
+
 end
